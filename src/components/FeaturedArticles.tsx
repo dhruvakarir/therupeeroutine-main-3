@@ -20,13 +20,13 @@ const articles = [
     image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80"
   },
   {
-    id: "one-crore-portfolio",
-    title: "How to Build a ₹1 Crore Portfolio by Age 40",
-    excerpt: "Strategic investment plan combining equity mutual funds, PPF, and smart asset allocation to achieve your first crore through disciplined investing.",
+    id: "creating-a-budget",
+    title: "Creating a Budget and Sticking to It: An Indian Guide",
+    excerpt: "Comprehensive guide to create a budget for your family to track expenses, save more, and achieve financial goals in the Indian context.",
     category: "Wealth Building",
-    readTime: "10 min read",
-    author: "Anita Desai",
-    image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80"
+    readTime: "4 min read",
+    author: "Dhruv Karir",
+    image: "https://drive.google.com/file/d/1tjnX13y1bAcnw9oXbKoBiV2jXxJaxG0s/view?usp=share_link"
   },
   {
     id: "section-80c-deductions",
