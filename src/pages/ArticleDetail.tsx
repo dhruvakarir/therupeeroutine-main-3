@@ -116,47 +116,68 @@ const articles = [
     publishDate: "March 10, 2024"
   },
   {
-    id: "section-80c-deductions",
-    title: "Section 80C Deductions: Maximize Your Tax Savings",
-    excerpt: "Comprehensive guide to claiming maximum tax deductions under Section 80C including ELSS, PPF, EPF, and life insurance premiums.",
+    id: "creating-a-budget",
+    title: "Creating a Budget and Sticking to It: An Indian Guide",
+    excerpt: "Comprehensive guide to create a budget for your family to track expenses, save more, and achieve financial goals in the Indian context.",
     content: `
-      <h2>Understanding Section 80C</h2>
-      <p>Section 80C of the Income Tax Act allows you to claim deductions up to ₹1.5 lakh from your taxable income, potentially saving up to ₹46,800 in taxes (at 30% tax rate plus cess).</p>
+      <p> Growing up in India, managing money usually meant listening to elders talk about “living within your means”, but rarely anyone informed us of step-by-step guide. Even our schools lack basic education on personal financial. I felt this gap when I started working 3 years back and had to go through a lot of content to understand the nuances. In 21st century, with metropolitan lifestyles and scope for endless expenses, mastering budgeting has never been more essential for salaried professionals, freelancers, small- business owners, and families alike. </p>
+      <h2>Why Budgeting Matters in India</h2>
+      <p>Unlike many Western countries, Indian expenses often include festival spending, extended family support, unpredictable medical bills, and fluctuating monthly costs. Budgeting gives you control, security, and clarity, even when those unexpected expenses strike.​</p>
       
-      <h2>Investment Options Under 80C</h2>
+      <h3>Step 1: Know Your Money</h3>
+      <p>Before you set limits, track your monthly income and every rupee spent for at least one month. Use a notebook, budgeting app (like Money Manager), or excel sheet. Count salary, freelance earnings, rent from properties, and irregular cash flows like bonuses or gifts.​</p>
       
-      <h3>1. Equity Linked Savings Scheme (ELSS)</h3>
-      <p>ELSS mutual funds offer tax benefits with the shortest lock-in period of just 3 years. They invest in equity markets and offer potential for high returns.</p>
+      <h3>Step 2: Set Clear Financial Goals</h3>
+      <p>Set your financial goals, are you saving for a house? EMI-free living? Festival shopping? International Vacation ?</p>
+      <p>Clarity turns vague intentions into actionable plans. Write down short-term (next six months), medium-term (2–3 years), and far-term (retirement, children’s education) goals.​</p>
+
+      <h3>Step 3: Choose a Proven Budgeting Framework</h3>
+
+      <h4>The 50–30–20 Rule :</h4>
+      <p> Add income from all the sources and distribute it according to the following:
+          50% Needs: Rent, groceries, utilities, EMIs, and school fees.​
+          30% Wants: Eating out, travel, mobile upgrades, festivals.
+          20% Savings & Investments: FDs, SIPs, emergency fund, Stocks, Real Estate.
+          </p>
+
+      <h4>Envelope System:</h4>
+      <p> I saw this in my childhood, my father used to get salary in cash every month, and he will give it to my mother. My mother will distribute it in different envelopes for all the major expense (groceries, school fees, rent, travel, entertainment) perfect for hands-on control.​</p>
+
+      <h4>Zero-Based Budgeting:</h4>
+      <p> Assign every rupee a “job” so there’s no mindless spending. If you earn ₹60,000, plan precisely how all ₹60,000 will be spent or saved.​</p>
+     
+     
+      <h3>Step 4: Build a Budget Table</h3>
+      <p>Here’s an example for a ₹75,000/month salary:</p>
+      <img src="https://drive.google.com/file/d/1bacSjCs-PhdLh0hrYKBdxnPU-uNgck8k/view?usp=share_link" alt="alternatetext">
       
-      <h3>2. Public Provident Fund (PPF)</h3>
-      <p>PPF offers guaranteed returns with 15-year maturity. Interest earned is completely tax-free, making it a triple benefit scheme (EEE - Exempt, Exempt, Exempt).</p>
+      <h3>Step 5: Stick to Your Budget : Desi Hacks</h3>
+      <ul>
+        <li>Automate Savings: Move funds for SIPs and FDs the moment your salary comes in.​</li>
+        <li>‘No Spend’ Days: Dedicate days to not spending any discretionary money.​</li>
+        <li>Make Lists: Write lists for groceries and shopping, and stick to them.</li>
+        <li>Plan for Festivals: Set aside a festival fund monthly instead of scrambling last minute.​​</li>
+        <li>Track Weekly: Review your spending each week apps like Money Manager, MoneyView, or Google Sheets are perfect.</li>
+      </ul>
+
+
+      <h3>Pro Tips for Indian Finance Success</h3>
+      <ul>  
+        <li>Always keep an emergency fund atleast equal to three months’ expenses.​</li>
+        <li> Tackle high-interest loans (like personal loans) first to avoid increasing debt.​</li>
+        <li> Find free ways to entertain: local parks, free events, govt. shows, learning.​</li>
+        <li> Resist social pressure to spend like others: your budget, your rules.​</li>
+      </ul>
+
+      <h3>Conclusion</h3>
+      <p>Budgeting isn’t boring , it’s your ticket to guilt-free fun, festival shopping, and building wealth over time. Start simple, track honestly, and adjust as life changes. In our country, discipline and flexibility go hand-in-hand to make budgeting truly work for you.</p>
       
-      <h3>3. Employee Provident Fund (EPF)</h3>
-      <p>Your EPF contribution automatically qualifies for 80C deduction. If you're contributing ₹1.5 lakh through EPF, you've maxed out your 80C limit.</p>
-      
-      <h3>4. Life Insurance Premium</h3>
-      <p>Premium paid for life insurance policies qualifies for deduction. Ensure the premium doesn't exceed 10% of the sum assured.</p>
-      
-      <h3>5. National Savings Certificate (NSC)</h3>
-      <p>NSC is a government-backed savings scheme with 5-year maturity and fixed returns, available at post offices.</p>
-      
-      <h3>6. Home Loan Principal Repayment</h3>
-      <p>Principal repayment of home loan qualifies under 80C. Interest component is separately deductible under Section 24.</p>
-      
-      <h3>7. Tuition Fees</h3>
-      <p>Tuition fees paid for up to 2 children's education in India qualifies for deduction (only tuition fees, not other charges).</p>
-      
-      <h2>Smart Strategy</h2>
-      <p>Don't just invest for tax saving. Choose products that align with your financial goals. Mix ELSS for growth, PPF for safety, and EPF is automatic.</p>
-      
-      <h2>Additional Tax Savings</h2>
-      <p>Beyond 80C, explore Section 80D (health insurance), Section 80CCD(1B) (additional ₹50,000 for NPS), and Section 80G (donations).</p>
-    `,
-    category: "Tax Planning",
-    readTime: "6 min read",
-    author: "Vikram Patel",
-    image: "https://images.unsplash.com/photo-1579621970795-87facc2f976d?w=800&q=80",
-    publishDate: "March 8, 2024"
+      `,
+    category: "Wealth Building",
+    readTime: "4 min read",
+    author: "Dhruv Karir",
+    image: "https://drive.google.com/file/d/1tjnX13y1bAcnw9oXbKoBiV2jXxJaxG0s/view?usp=share_link",
+    publishDate: "Nov 9, 2025"
   },
   {
     id: "nifty-50-vs-next-50",

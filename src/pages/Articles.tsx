@@ -31,13 +31,13 @@ const articles = [
     image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80"
   },
   {
-    id: "section-80c-deductions",
-    title: "Section 80C Deductions: Maximize Your Tax Savings",
-    excerpt: "Comprehensive guide to claiming maximum tax deductions under Section 80C including ELSS, PPF, EPF, and life insurance premiums.",
-    category: "Tax Planning",
-    readTime: "6 min read",
-    author: "Vikram Patel",
-    image: "https://images.unsplash.com/photo-1579621970795-87facc2f976d?w=800&q=80"
+    id: "creating-a-budget",
+    title: "Creating a Budget and Sticking to It: An Indian Guide",
+    excerpt: "Comprehensive guide to create a budget for your family to track expenses, save more, and achieve financial goals in the Indian context.",
+    category: "Wealth Building",
+    readTime: "4 min read",
+    author: "Dhruv Karir",
+    image: "https://drive.google.com/file/d/1tjnX13y1bAcnw9oXbKoBiV2jXxJaxG0s/view?usp=share_link"
   },
   {
     id: "nifty-50-vs-next-50",
