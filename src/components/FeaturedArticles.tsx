@@ -26,7 +26,7 @@ const articles = [
     category: "Wealth Building",
     readTime: "4 min read",
     author: "Dhruv Karir",
-    image: "https://drive.google.com/file/d/1tjnX13y1bAcnw9oXbKoBiV2jXxJaxG0s/view?usp=share_link"
+    image: "https://unsplash.com/photos/a-laptop-and-a-cup-of-coffee-y356dQxeMn0"
   },
   {
     id: "section-80c-deductions",
