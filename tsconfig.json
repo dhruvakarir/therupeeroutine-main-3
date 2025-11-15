@@ -1,6 +1,6 @@
 {
   "files": [],
-  "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }],
+  "extends": "./tsconfig.app.json",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
@@ -18,7 +18,11 @@
     "strict": true,
     "moduleResolution": "Node",
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "composite": true,
+    "declaration": true,
+    "incremental": true,
+    "types": ["vite/client"]
   },
   "include": ["src"],
   "exclude": ["node_modules"]
