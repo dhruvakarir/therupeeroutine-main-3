@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-2xl font-heading font-bold mb-4">WealthWise</h3>
+            <h3 className="text-2xl font-heading font-bold mb-4">The Rupee Routine</h3>
             <p className="text-primary-foreground/80">
               Your trusted source for personal finance education and wealth-building strategies.
             </p>
@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-primary-foreground/20 pt-8 text-center text-primary-foreground/70">
-          <p>&copy; {new Date().getFullYear()} WealthWise. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} TheRupeeRoutine. All rights reserved.</p>
         </div>
       </div>
     </footer>

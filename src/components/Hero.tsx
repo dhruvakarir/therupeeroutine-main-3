@@ -10,6 +10,11 @@ const Hero = () => {
     e.preventDefault();
     navigate("/articles");
   };
+
+  const goToNewsLetter = (e: React.MouseEvent) => {
+    e.preventDefault();
+    navigate("/", { state: { scrollTo: "newsletter" } });
+  };
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-16">
       <div className="absolute inset-0 z-0">
@@ -35,8 +40,8 @@ const Hero = () => {
             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-base font-medium" onClick={goToArticles}> 
               Explore Articles <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button size="lg" variant="outline" className="bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground hover:bg-background/20 text-base font-medium">
-              Subscribe to Newsletter
+            <Button size="lg" variant="outline" onClick={goToNewsLetter}  className="bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground hover:bg-background/20 text-base font-medium">
+              Subscribe to Newsletter 
             </Button>
           </div>
         </div>

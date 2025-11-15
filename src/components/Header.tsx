@@ -1,23 +1,38 @@
 import { Button } from "@/components/ui/button";
 import { NavLink } from "@/components/NavLink";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+
+
 
 const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
-
+  const [open, setOpen] = useState(false);
   const goToCategories = (e: React.MouseEvent) => {
-    e.preventDefault();
-    // If already on home, just scroll smoothly
-    if (location.pathname === "/") {
-      const el = document.getElementById("categories");
-      if (el) el.scrollIntoView({ behavior: "smooth" });
-      return;
-    }
-    // Navigate to home with hash (browser will land at /#categories)
-    navigate("/#categories");
+  e.preventDefault();
+
+  // If already on the home page, scroll to the categories section
+  if (location.pathname === "/") {
+    const el = document.getElementById("categories");
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+    return;
+  }
+  // Navigate to the home page with the hash for categories
+  navigate("/", { state: { scrollTo: "categories" } });
+};
+  const handleCategoriesClick = (e: React.MouseEvent) => {
+    setOpen(false); // Close the sheet
+    goToCategories(e); // Navigate to categories
   };
+
+  const handleNewsLetterClick = (e: React.MouseEvent) => {
+    setOpen(false); // Close the sheet
+    goToNewsletter(e); // Navigate to newsletter
+  };
+
   const goToNewsletter = (e: React.MouseEvent) => {
     e.preventDefault();
     // If already on home, just scroll smoothly
@@ -27,21 +42,23 @@ const Header = () => {
       return;
     }
     // Navigate to home with hash (browser will land at /#newsletter)
-    navigate("/#newsletter");
+     navigate("/", { state: { scrollTo: "newsletter" } });
   };
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
         <h1 className="text-2xl font-heading font-bold text-primary">
-          WealthWise
+          The Rupee Routine
         </h1>
         
         <div className="hidden md:flex items-center gap-8">
           <NavLink to="/" className="text-foreground hover:text-secondary transition-colors font-medium">
             Home
           </NavLink>
-          <NavLink to="/articles" className="text-foreground hover:text-secondary transition-colors font-medium">
-            Articles
+          <NavLink to="/articles" className="text-foreground hover:text-secondary transition-colors font-medium" onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to the top
+            }}>
+            Articles 
           </NavLink>
            <a href="#categories" onClick={goToCategories} className="text-foreground hover:text-secondary transition-colors font-medium">
             Categories
@@ -54,9 +71,55 @@ const Header = () => {
           </Button>
         </div>
 
-        <button className="md:hidden">
-          <Menu className="h-6 w-6 text-foreground" />
-        </button>
+      <Sheet open={open} onOpenChange={setOpen}>
+          <SheetTrigger asChild className="md:hidden">
+            <button>
+              <Menu className="h-6 w-6 text-foreground" />
+            </button>
+          </SheetTrigger>
+          <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+            <div className="flex flex-col gap-6 mt-8">
+              <NavLink 
+                to="/" 
+                className="text-lg text-foreground hover:text-secondary transition-colors font-medium"
+                onClick={() => setOpen(false)}
+              >
+                Home
+              </NavLink>
+             <NavLink 
+            to="/articles" 
+            className="text-lg text-foreground hover:text-secondary transition-colors font-medium"
+            onClick={() => {
+              setOpen(false); // Close the sheet
+              window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to the top
+            }}
+          >
+            Articles
+          </NavLink>
+              <a 
+                href="#categories" 
+                className="text-lg text-foreground hover:text-secondary transition-colors font-medium"
+                onClick={handleCategoriesClick}
+              >
+                Categories
+              </a>
+              <a 
+                href="#newsletter" 
+                className="text-lg text-foreground hover:text-secondary transition-colors font-medium"
+                onClick={handleNewsLetterClick}
+              >
+                Newsletter
+              </a>
+              <Button 
+                variant="default" 
+                className="bg-secondary hover:bg-secondary/90 w-full"
+                onClick={() => setOpen(false)}
+              >
+                Subscribe
+              </Button>
+            </div>
+          </SheetContent>
+        </Sheet>
       </nav>
     </header>
   );
