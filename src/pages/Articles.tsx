@@ -37,15 +37,15 @@ const articles = [
     category: "Wealth Building",
     readTime: "4 min read",
     author: "Dhruv Karir",
-    image: "https://drive.google.com/file/d/1tjnX13y1bAcnw9oXbKoBiV2jXxJaxG0s/view?usp=share_link"
+    image: "https://images.unsplash.com/photo-1652422485192-d959b9a8d16e?q=80&w=1740"
   },
   {
-    id: "nifty-50-vs-next-50",
-    title: "Nifty 50 vs Nifty Next 50: Where Should You Invest?",
-    excerpt: "Detailed comparison of India's top two indices, their historical returns, risk profiles, and how to diversify across large and mid-cap stocks.",
-    category: "Stock Market",
-    readTime: "15 min read",
-    author: "Arjun Mehta",
+    id: "building-emergency-fund",
+    title: "Step 1 in Money: Building Emergency Fund",
+    excerpt: "Essential guide to creating an emergency fund covering 6 months of expenses to ensure financial security during unforeseen events.",
+    category: "Wealth Building",
+    readTime: "6 min read",
+    author: "Dhruv Karir",
     image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&q=80"
   },
   {

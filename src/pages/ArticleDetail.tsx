@@ -120,38 +120,38 @@ const articles = [
     title: "Creating a Budget and Sticking to It: An Indian Guide",
     excerpt: "Comprehensive guide to create a budget for your family to track expenses, save more, and achieve financial goals in the Indian context.",
     content: `
-      <p> Growing up in India, managing money usually meant listening to elders talk about “living within your means”, but rarely anyone informed us of step-by-step guide. Even our schools lack basic education on personal financial. I felt this gap when I started working 3 years back and had to go through a lot of content to understand the nuances. In 21st century, with metropolitan lifestyles and scope for endless expenses, mastering budgeting has never been more essential for salaried professionals, freelancers, small- business owners, and families alike. </p>
-      <h2>Why Budgeting Matters in India</h2>
-      <p>Unlike many Western countries, Indian expenses often include festival spending, extended family support, unpredictable medical bills, and fluctuating monthly costs. Budgeting gives you control, security, and clarity, even when those unexpected expenses strike.​</p>
+      <p> Growing up in India, managing money usually meant listening to elders talk about “living within your means”, but rarely anyone informed us of step-by-step guide. Even our schools lack basic education on personal financial. I felt this gap when I started working 3 years back and had to go through a lot of content to understand the nuances. In 21st century, with metropolitan lifestyles and scope for endless expenses, mastering budgeting has never been more essential for salaried professionals, freelancers, small- business owners, and families alike. <br></br></p>
+      <h2><b>Why Budgeting Matters in India</b></h2>
+      <p>Unlike many Western countries, Indian expenses often include festival spending, extended family support, unpredictable medical bills, and fluctuating monthly costs. Budgeting gives you control, security, and clarity, even when those unexpected expenses strike. <br>​</p>
       
-      <h3>Step 1: Know Your Money</h3>
-      <p>Before you set limits, track your monthly income and every rupee spent for at least one month. Use a notebook, budgeting app (like Money Manager), or excel sheet. Count salary, freelance earnings, rent from properties, and irregular cash flows like bonuses or gifts.​</p>
+      <h3><b>Step 1: Know Your Money</b></h3>
+      <p>Before you set limits, track your monthly income and every rupee spent for at least one month. Use a notebook, budgeting app (like Money Manager), or excel sheet. Count salary, freelance earnings, rent from properties, and irregular cash flows like bonuses or gifts<br></br></p>
       
-      <h3>Step 2: Set Clear Financial Goals</h3>
+      <h3><b>Step 2: Set Clear Financial Goals</b></h3>
       <p>Set your financial goals, are you saving for a house? EMI-free living? Festival shopping? International Vacation ?</p>
-      <p>Clarity turns vague intentions into actionable plans. Write down short-term (next six months), medium-term (2–3 years), and far-term (retirement, children’s education) goals.​</p>
+      <p>Clarity turns vague intentions into actionable plans. Write down short-term (next six months), medium-term (2–3 years), and far-term (retirement, children’s education) goals.<br>​</p>
 
-      <h3>Step 3: Choose a Proven Budgeting Framework</h3>
+      <h3><b>Step 3: Choose a Proven Budgeting Framework</b></h3>
 
-      <h4>The 50–30–20 Rule :</h4>
+      <h4><b>The 50–30–20 Rule :</b></h4>
       <p> Add income from all the sources and distribute it according to the following:
           50% Needs: Rent, groceries, utilities, EMIs, and school fees.​
           30% Wants: Eating out, travel, mobile upgrades, festivals.
           20% Savings & Investments: FDs, SIPs, emergency fund, Stocks, Real Estate.
           </p>
 
-      <h4>Envelope System:</h4>
+      <h4><b>Envelope System:</b></h4>
       <p> I saw this in my childhood, my father used to get salary in cash every month, and he will give it to my mother. My mother will distribute it in different envelopes for all the major expense (groceries, school fees, rent, travel, entertainment) perfect for hands-on control.​</p>
 
-      <h4>Zero-Based Budgeting:</h4>
+      <h4><b>Zero-Based Budgeting:</b></h4>
       <p> Assign every rupee a “job” so there’s no mindless spending. If you earn ₹60,000, plan precisely how all ₹60,000 will be spent or saved.​</p>
      
      
-      <h3>Step 4: Build a Budget Table</h3>
+      <h3><b>Step 4: Build a Budget Table</b></h3>
       <p>Here’s an example for a ₹75,000/month salary:</p>
       <img src="https://drive.google.com/file/d/1bacSjCs-PhdLh0hrYKBdxnPU-uNgck8k/view?usp=share_link" alt="alternatetext">
       
-      <h3>Step 5: Stick to Your Budget : Desi Hacks</h3>
+      <h3><b>Step 5: Stick to Your Budget : Desi Hacks</b></h3>
       <ul>
         <li>Automate Savings: Move funds for SIPs and FDs the moment your salary comes in.​</li>
         <li>‘No Spend’ Days: Dedicate days to not spending any discretionary money.​</li>
@@ -159,82 +159,167 @@ const articles = [
         <li>Plan for Festivals: Set aside a festival fund monthly instead of scrambling last minute.​​</li>
         <li>Track Weekly: Review your spending each week apps like Money Manager, MoneyView, or Google Sheets are perfect.</li>
       </ul>
+      <br>
 
 
-      <h3>Pro Tips for Indian Finance Success</h3>
+      <h3><b>Pro Tips for Indian Finance Success</b></h3>
       <ul>  
         <li>Always keep an emergency fund atleast equal to three months’ expenses.​</li>
         <li> Tackle high-interest loans (like personal loans) first to avoid increasing debt.​</li>
         <li> Find free ways to entertain: local parks, free events, govt. shows, learning.​</li>
         <li> Resist social pressure to spend like others: your budget, your rules.​</li>
       </ul>
+      <br>
 
-      <h3>Conclusion</h3>
+      <h3><b>Conclusion</b></h3>
       <p>Budgeting isn’t boring , it’s your ticket to guilt-free fun, festival shopping, and building wealth over time. Start simple, track honestly, and adjust as life changes. In our country, discipline and flexibility go hand-in-hand to make budgeting truly work for you.</p>
       
       `,
     category: "Wealth Building",
     readTime: "4 min read",
     author: "Dhruv Karir",
-    image: "https://drive.google.com/file/d/1tjnX13y1bAcnw9oXbKoBiV2jXxJaxG0s/view?usp=share_link",
+    image: "https://images.unsplash.com/photo-1652422485192-d959b9a8d16e?q=80&w=1740",
     publishDate: "Nov 9, 2025"
   },
   {
-    id: "nifty-50-vs-next-50",
-    title: "Nifty 50 vs Nifty Next 50: Where Should You Invest?",
-    excerpt: "Detailed comparison of India's top two indices, their historical returns, risk profiles, and how to diversify across large and mid-cap stocks.",
+     id: "building-emergency-fund",
+    title: "Step 1 in Money: Building Emergency Fund",
+    excerpt: "Essential guide to creating an emergency fund covering 6 months of expenses to ensure financial security during unforeseen events.",
     content: `
-      <h2>Understanding the Indices</h2>
-      
-      <h3>Nifty 50</h3>
-      <p>Nifty 50 represents the top 50 companies in India by market capitalization. It includes giants like Reliance, TCS, HDFC Bank, Infosys, and ITC. These are the most stable, blue-chip companies.</p>
-      
-      <h3>Nifty Next 50</h3>
-      <p>Nifty Next 50 comprises the next 50 companies after the Nifty 50. These are large companies but slightly smaller than Nifty 50 constituents, often called emerging blue-chips.</p>
-      
-      <h2>Historical Performance Comparison</h2>
-      <p>Over the last 10 years (2014-2024):</p>
+      <main>
+  <section>
+    <h2>What an Emergency Fund Solves</h2>
+    <p><strong>Timing:</strong> Liquidity should be available today, not just in two days or two months—emergencies don’t follow schedules.</p>
+    <p><strong>Certainty:</strong> Capital safety is paramount; returns are secondary.</p>
+    <p><strong>Friction:</strong> Aim for fewer clicks, minimal penalties, and predictable access when money is needed immediately.</p>
+  </section>
+
+  <section>
+    <h2>How Much to Keep</h2>
+    <p><strong>Minimum:</strong> 3–6 months of essential expenses if you have stable employment and adequate medical/life insurance.</p>
+    <p><strong>Preferred:</strong> 6–9 months if you’re self-employed, on variable pay, or planning a transition (job switch, MBA, relocation).</p>
+  </section>
+
+  <section>
+    <h2>Where to Park the Fund</h2>
+    <p><strong>Design principle:</strong> Blend instant-access cash with very low-risk T+0/T+1 options, and keep a small sleeve for slightly higher yield while maintaining safety.</p>
+
+    <article>
+      <h3>Overnight mutual funds</h3>
+      <p>Very low-risk funds investing in one-day money market instruments; suitable for ultra-short parking.</p>
       <ul>
-        <li><strong>Nifty 50:</strong> CAGR of approximately 12-13%</li>
-        <li><strong>Nifty Next 50:</strong> CAGR of approximately 14-15%</li>
+        <li>Liquidity: Typically T+1; sometimes same-day during cutoffs.</li>
+        <li>Use case: Idle cash for days to a few weeks with minimal credit/interest rate risk.</li>
+        <li>Examples: HDFC Overnight, SBI Overnight, ICICI Prudential Overnight.</li>
       </ul>
-      <p>Nifty Next 50 has historically outperformed Nifty 50, but with slightly higher volatility.</p>
-      
-      <h2>Risk Profile</h2>
-      <p><strong>Nifty 50:</strong> Lower volatility, more stable during market corrections. Good for conservative investors.</p>
-      <p><strong>Nifty Next 50:</strong> Higher volatility but better growth potential. Suitable for investors with moderate to high risk appetite.</p>
-      
-      <h2>Investment Strategy</h2>
-      
-      <h3>If You Want Stability</h3>
-      <p>Invest primarily in Nifty 50 index funds. They're less volatile and provide steady returns with lower risk.</p>
-      
-      <h3>If You Want Growth</h3>
-      <p>Consider Nifty Next 50 for higher growth potential. These companies have room to grow into the Nifty 50.</p>
-      
-      <h3>Best Approach: Combination</h3>
-      <p>Allocate 60-70% to Nifty 50 and 30-40% to Nifty Next 50. This gives you stability with growth potential. Some Nifty 100 funds automatically cover both.</p>
-      
-      <h2>Cost Consideration</h2>
-      <p>Index funds tracking these indices have very low expense ratios (0.10-0.30%). This makes them extremely cost-effective for long-term investing.</p>
-      
-      <h2>Which Fund to Choose?</h2>
-      <p>Look for:</p>
+    </article>
+
+    <article>
+      <h3>Liquid mutual funds</h3>
+      <p>Short-duration debt funds with T+1 liquidity; many offer limited instant redemption; suited for 1–90 day needs.</p>
       <ul>
-        <li>Lowest expense ratio</li>
-        <li>Lowest tracking error</li>
-        <li>High trading volume (for ETFs)</li>
-        <li>Fund house reputation</li>
+        <li>Liquidity: T+1 standard; some AMCs offer instant redemption limits.</li>
+        <li>Use case: Quick access with low volatility for short-term buffers.</li>
+        <li>Examples: Nippon Liquid, SBI Liquid, HDFC Liquid.</li>
       </ul>
-      
-      <h2>Conclusion</h2>
-      <p>Both indices are excellent investment options. Your choice depends on your risk tolerance and investment goals. For most investors, a Nifty 100 fund (combining both) offers the best of both worlds.</p>
+    </article>
+
+    <article>
+      <h3>Ultra-short/low duration debt funds</h3>
+      <p>Conservative debt funds with slightly longer maturity than liquid; aim for stability over 1–6 month holding.</p>
+      <ul>
+        <li>Liquidity: Usually T+1/T+2; modest NAV movement risk exists.</li>
+        <li>Use case: Tier where access can wait a couple of days.</li>
+        <li>Examples: ICICI Prudential Ultra Short, Axis Ultra Short, Kotak Low Duration.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Arbitrage mutual funds</h3>
+      <p>Exploit cash–futures spreads; equity-oriented for tax; typical holding 2–6 months; settlement T+2.</p>
+      <ul>
+        <li>Liquidity: T+2 redemption; low-to-moderate NAV volatility vs cash-like debt.</li>
+        <li>Use case: Secondary sleeve for funds not needed instantly but within weeks.</li>
+        <li>Examples: Kotak Arbitrage, Edelweiss Arbitrage, Nippon India Arbitrage.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>High-interest savings account</h3>
+      <p>Instant access via UPI/IMPS/ATM; safest for the first layer of emergencies; rate depends on bank.</p>
+      <ul>
+        <li>Liquidity: Instant, 24x7 (subject to transfer limits).</li>
+        <li>Use case: First 1–2 months of expenses for true immediacy.</li>
+        <li>Examples: IDFC FIRST, AU Small Finance, RBL.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Savings with sweep-in FD</h3>
+      <p>Auto-transfers surplus to FDs for better yield and auto-break on demand; balances yield and access.</p>
+      <ul>
+        <li>Liquidity: Near-instant via sweep-in; minimizes penalty vs breaking a large FD.</li>
+        <li>Use case: Middle tier to add yield without sacrificing quick access.</li>
+        <li>Examples: SBI MOD/Sweep, HDFC Sweep-in, ICICI Money Multiplier.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Fixed deposits (FDs)</h3>
+      <p>Time deposits with assured rates; premature withdrawal allowed with penalty; consider DICGC coverage.</p>
+      <ul>
+        <li>Liquidity: Breakable with penalty; ladder to reduce penalty and improve access cadence.</li>
+        <li>Use case: Outer tier for 3–12 month runway; pair with liquid cash tier.</li>
+        <li>Tips: Distribute across banks to maximize DICGC insurance coverage where relevant.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Treasury bills (T‑bills)</h3>
+      <p>91/182/364‑day sovereign bills; best held to maturity for clarity and safety; invest via RBI Retail Direct or brokers.</p>
+      <ul>
+        <li>Liquidity: Secondary market exists but can be thin; maturity ensures certainty.</li>
+        <li>Use case: Planned runway beyond the first couple of months.</li>
+        <li>Examples: 91‑day, 182‑day, 364‑day T‑bills.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section>
+    <h2>Practical Portfolio Structure</h2>
+    <p><strong>Tier 1 (Instant):</strong> High-yield savings + sweep-in for 1–2 months’ expenses.</p>
+    <p><strong>Tier 2 (T+0/T+1):</strong> Liquid/overnight funds for the next 1–3 months.</p>
+    <p><strong>Tier 3 (Planned access):</strong> Ultra-short/arbitrage/FD ladder/T-bills for the remaining months.</p>
+  </section>
+
+  <section>
+    <h2>Key Points to Remember</h2>
+    <ul>
+      <li>Diversify across instruments to avoid access issues on bank/market holidays and platform outages.</li>
+      <li>Use FD laddering and multi-bank distribution to optimize liquidity and insurance coverage limits.</li>
+      <li>Set up and test access methods (apps, UPI, broker) in advance.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Taxation and Penalties</h2>
+    <p><strong>Savings/FD interest:</strong> Taxed at slab; premature FD breakage usually incurs a rate cut/penalty.</p>
+    <p><strong>Debt funds (liquid/ultra-short):</strong> Short-term gains taxed at income slab rates; prioritize liquidity over tax arbitrage.</p>
+    <p><strong>Arbitrage funds:</strong> Equity taxation typically applies; short-term gains often taxed at 20%, while long-term gains may be at concessional rates per prevailing rules.</p>
+    <p><strong>T‑bills/G‑Secs:</strong> Discount/interest taxed at slab; benefit is sovereign safety and clarity.</p>
+  </section>
+
+  <section>
+    <h2>“Atta ka Drum” Discipline</h2>
+    <p>Keep the corpus separate, fund it monthly, don’t chase returns, and tap it only for true emergencies—the goal is certainty and speed, not maximum yield.</p>
+  </section>
+</main>
     `,
-    category: "Stock Market",
-    readTime: "15 min read",
-    author: "Arjun Mehta",
+    category: "Wealth Building",
+    readTime: "8 min read",
+    author: "Dhruv Karir",
     image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&q=80",
-    publishDate: "March 5, 2024"
+    publishDate: "Nov 4, 2025"
   },
   {
     id: "gold-investment-options",

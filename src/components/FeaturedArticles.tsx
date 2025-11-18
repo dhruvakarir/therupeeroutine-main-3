@@ -20,28 +20,28 @@ const articles = [
     image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80"
   },
   {
-    id: "creating-a-budget",
+    id: "building-emergency-fund",
     title: "Creating a Budget and Sticking to It: An Indian Guide",
     excerpt: "Comprehensive guide to create a budget for your family to track expenses, save more, and achieve financial goals in the Indian context.",
     category: "Wealth Building",
     readTime: "4 min read",
     author: "Dhruv Karir",
-    image: "https://unsplash.com/photos/a-laptop-and-a-cup-of-coffee-y356dQxeMn0"
+    image: "https://images.unsplash.com/photo-1652422485192-d959b9a8d16e?q=80&w=1740"
   },
   {
-    id: "section-80c-deductions",
-    title: "Section 80C Deductions: Maximize Your Tax Savings",
-    excerpt: "Comprehensive guide to claiming maximum tax deductions under Section 80C including ELSS, PPF, EPF, and life insurance premiums.",
-    category: "Tax Planning",
+    id: "building-emergency-fund",
+    title: "Step 1 in Money: Building Emergency Fund",
+    excerpt: "Essential guide to creating an emergency fund covering 6 months of expenses to ensure financial security during unforeseen events.",
+    category: "Wealth Building",
     readTime: "6 min read",
-    author: "Vikram Patel",
-    image: "https://images.unsplash.com/photo-1579621970795-87facc2f976d?w=800&q=80"
+    author: "Dhruv Karir",
+    image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&q=80"
   },
   {
-    id: "nifty-50-vs-next-50",
-    title: "Nifty 50 vs Nifty Next 50: Where Should You Invest?",
-    excerpt: "Detailed comparison of India's top two indices, their historical returns, risk profiles, and how to diversify across large and mid-cap stocks.",
-    category: "Stock Market",
+    id: "one-crore-portfolio",
+    title: "How to Build a ₹1 Crore Portfolio by Age 40",
+    excerpt: "Strategic investment plan combining equity mutual funds, PPF, and smart asset allocation to achieve your first crore through disciplined investing.",
+    category: "Wealth Building",
     readTime: "15 min read",
     author: "Arjun Mehta",
     image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&q=80"
