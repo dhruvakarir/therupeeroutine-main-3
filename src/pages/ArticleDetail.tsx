@@ -73,47 +73,44 @@ const articles = [
     publishDate: "March 12, 2024"
   },
   {
-    id: "one-crore-portfolio",
-    title: "How to Build a ₹1 Crore Portfolio by Age 40",
-    excerpt: "Strategic investment plan combining equity mutual funds, PPF, and smart asset allocation to achieve your first crore through disciplined investing.",
+    id: "ctc-vs-in-hand",
+    title: "Indian Salary structure decoded: CTC vs in-hand salary",
+    excerpt: "Understand the difference between CTC and in-hand salary, and learn how to optimize your salary structure for maximum benefits.",
     content: `
-      <h2>The ₹1 Crore Goal</h2>
-      <p>Building a portfolio worth ₹1 crore by age 40 is achievable with disciplined investing and the power of compounding. Let's create a roadmap.</p>
-      
-      <h3>Starting at Age 25</h3>
-      <p>If you start at 25, you need to invest approximately ₹10,000 per month in equity mutual funds assuming 12% annual returns. That's just ₹330 per day!</p>
-      
-      <h2>Asset Allocation Strategy</h2>
-      <p>Don't put all eggs in one basket. Here's a recommended allocation for building ₹1 crore:</p>
-      <ul>
-        <li><strong>70% in Equity Mutual Funds:</strong> For growth (₹7,000/month via SIP)</li>
-        <li><strong>20% in PPF:</strong> For safety and tax benefits (₹2,000/month)</li>
-        <li><strong>10% in Emergency Fund:</strong> For liquidity (₹1,000/month)</li>
-      </ul>
-      
-      <h2>The Power of Compounding</h2>
-      <p>At ₹10,000/month for 15 years with 12% returns, your total investment is ₹18 lakhs but grows to over ₹1 crore. That's ₹82 lakhs earned through compounding!</p>
-      
-      <h3>Step-up Your SIPs</h3>
-      <p>Increase your SIP by 10% annually. If you start with ₹10,000 and increase it by 10% yearly, you'll reach ₹1 crore faster - in about 12 years instead of 15.</p>
-      
-      <h2>Starting Late? Don't Worry</h2>
-      <p>Starting at 30? You'll need to invest around ₹18,000 per month. At 35? Around ₹35,000 per month. The earlier you start, the less you need to invest monthly.</p>
-      
-      <h2>Key Principles</h2>
-      <ul>
-        <li>Start early, even with small amounts</li>
-        <li>Stay invested during market downturns</li>
-        <li>Increase investments with salary hikes</li>
-        <li>Review portfolio annually</li>
-        <li>Avoid premature withdrawals</li>
-      </ul>
+     <p>When a company quotes your CTC, it’s telling you what it spends on you in a year including salary, benefits, bonuses, even retirement/voluntary contributions. Your in-hand salary is what actually lands in your bank after tax and other employee specific deductions. Think of CTC as the company’s budget, and in-hand as your real cash flow.</p>
+
+<h3>What does a CTC include</h3>
+<ul>
+  <li><strong>Fixed pay:</strong> Basic salary, HRA, LTA, and special/other allowances. These largely define your taxable income.</li>
+  <li><strong>Employer-side benefits:</strong> Employer EPF (often 12% of Basic) or 1800 for startup employees, gratuity provisioning, group health/term insurance premiums, and employer NPS (80CCD(2)). These sit inside CTC but don’t hit your account monthly.</li>
+  <li><strong>Variable/bonuses:</strong> Annual performance pay, joining/retention bonuses; paid on achievement/timing and taxed in the year of receipt.</li>
+  <li><strong>Equity (ESOPs/RSUs):</strong> Part of the CTC headline. RSUs are taxed as perquisite on vest, and future gains are capital gains on sale; ESOPs have exercise tax implications. They can be valuable but don’t increase monthly cash.</li>
+</ul>
+
+<h3>What does in-hand salary include</h3>
+<p>Starts from gross (Basic + HRA + LTA + other allowances) and subtracts employee EPF, TDS (income tax), Professional Tax, and any recoveries (loans, insurance add-ons).</p>
+<p>Basic anchors EPF and gratuity; HRA can lower tax in the old regime if you pay rent; LTA can be exempt (old regime) for eligible domestic travel in notified blocks. Under the new regime, popular exemptions like HRA/LTA generally don’t apply.</p>
+
+<h3>How to maximise the in-hand salary</h3>
+<ul>
+  <li><strong>Balance Basic Component thoughtfully:</strong> A very high Basic boosts EPF/gratuity (great long-term) but lowers present take-home. Too low hurts future benefits and HRA headroom. Aim for a middle ground aligned with your goals.</li>
+  <li><strong>Align salary structure to your tax regime:</strong><br>
+    <em>Old regime:</em> Optimize HRA (metro/non-metro), Leave Travel Allowance, and 80C/80D/80CCD(1B). Ensure rent proofs and investment documentation are present.<br>
+    <em>New regime:</em> Leverage standard deduction; ask about employer NPS (80CCD(2)) and focus on health/term cover and performance pay design instead of exemptions you can’t use.</li>
+  <li><strong>Clarify variable and equity:</strong> Confirm payout timing, targets, and taxes. Treat one-time bonuses and vesting events separately from your monthly planning.</li>
+  <li><strong>Use calculators before signing:</strong> Run both regimes with your exact breakup to compare monthly net. Small shifts between HRA vs special allowance or adding employer NPS can lift take-home without changing headline CTC.</li>
+  <li><strong>Reduce leakage:</strong> Opt out of optional deductions you don’t need, avoid credit interest costs by paying full card statements, and automate SIPs after payday to avoid idle cash sitting in bank accounts.</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>CTC is the story your employer tells the market; in-hand is the reality you live with each month. Decode the split, right-size Basic component, align your structure with the tax regime you’ll actually use, and pressure-test with numbers before you accept an offer. A transparent breakup and a few informed tweaks can improve monthly take-home, without changing the headline CTC , while still preserving the long-term benefits that build your wealth.</p>
+
     `,
-    category: "Wealth Building",
+    category: "Salary Structure",
     readTime: "10 min read",
-    author: "Anita Desai",
-    image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80",
-    publishDate: "March 10, 2024"
+    author: "Dhruv Karir",
+    image: "https://images.unsplash.com/photo-1729077537326-91749c1c9197?q=80&w=800",
+    publishDate: "March 10, 2025"
   },
   {
     id: "creating-a-budget",

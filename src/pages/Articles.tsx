@@ -22,13 +22,13 @@ const articles = [
     image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80"
   },
   {
-    id: "one-crore-portfolio",
-    title: "How to Build a ₹1 Crore Portfolio by Age 40",
-    excerpt: "Strategic investment plan combining equity mutual funds, PPF, and smart asset allocation to achieve your first crore through disciplined investing.",
-    category: "Wealth Building",
-    readTime: "10 min read",
-    author: "Anita Desai",
-    image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80"
+    id: "ctc-vs-in-hand",
+    title: "Indian Salary structure decoded: CTC vs in-hand salary",
+    excerpt: "Understand the difference between CTC and in-hand salary, and learn how to optimize your salary structure for maximum benefits.",
+    readTime: "15 min read",
+    category: "Salary Structure",
+    author: "Dhruv Karir",
+    image: "https://images.unsplash.com/photo-1729077537326-91749c1c9197?q=80&w=800"
   },
   {
     id: "creating-a-budget",
