@@ -46,7 +46,6 @@ const Hero = () => {
             <Button size="lg" variant="outline" onClick={goToNewsLetter}  className="bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground hover:bg-background/20 text-base font-medium">
               Subscribe to Newsletter 
             </Button>
-             <NewsletterModal open={showNewsletter} onClose={() => setShowNewsletter(false)} />
           </div>
         </div>
       </div>
