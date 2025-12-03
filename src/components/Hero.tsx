@@ -14,9 +14,12 @@ const Hero = () => {
     navigate("/articles");
   };
   const goToNewsLetter = (e: React.MouseEvent) => {
-      e.preventDefault();
-      setShowNewsletter(true);
-    };
+  e.preventDefault();
+  const el = document.getElementById("newsletter");
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth" });
+  }
+};
  
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-16">

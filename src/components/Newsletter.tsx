@@ -10,6 +10,7 @@ const Newsletter = () => {
   const [subscribeMsg, setSubscribeMsg] = useState<string | null>(null);
   const [isError, setIsError] = useState(false);
   const [showNewsletter, setShowNewsletter] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const goToNewsLetter = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -31,49 +32,52 @@ const Newsletter = () => {
             Get weekly insights on mutual funds, stock market updates, tax-saving tips,
             and investment strategies for Indian markets. Build your wealth with expert guidance.
           </p>
-
           <form
-            id="newsletter-form"
-          onSubmit={async (e) => {
-              e.preventDefault();
+              id="newsletter-form"
+              onSubmit={async (e) => {
+                e.preventDefault();
 
-              const form = e.currentTarget as HTMLFormElement | null;
-              if (!form) return; // safety
+                const form = e.currentTarget as HTMLFormElement | null;
+                if (!form) return;
 
-              const formData = new FormData(form);
-              const data = Object.fromEntries(formData);
+                const formData = new FormData(form);
+                const data = Object.fromEntries(formData);
 
-              try {
-                const res = await fetch("https://script.google.com/macros/s/AKfycbyFqHyDnkPrC_nuCsO9_gRA41SjHRfiFdMK8rmF3l-qQHspqM9uK_8mvGUkivEP4S_V/exec", {
-                  method: "POST",
-                  headers: { "Content-Type": "text/plain;charset=utf-8" },
-                  body: JSON.stringify(data),
-                });
+                setIsSubmitting(true);
+                setSubscribeMsg(null);
 
-                const text = await res.text();
-                let result: any;
                 try {
-                  result = JSON.parse(text);
-                } catch {
-                  result = { success: false, error: "Invalid response" };
-                }
+                  const res = await fetch("https://script.google.com/macros/s/AKfycbyFqHyDnkPrC_nuCsO9_gRA41SjHRfiFdMK8rmF3l-qQHspqM9uK_8mvGUkivEP4S_V/exec", {
+                    method: "POST",
+                    headers: { "Content-Type": "text/plain;charset=utf-8" },
+                    body: JSON.stringify(data),
+                  });
 
-                if (result.success) {
-                  setIsError(false);
-                  setSubscribeMsg("Thanks for subscribing!");
-                  form.reset();                 // use cached form, not e.currentTarget
-                } else {
+                  const text = await res.text();
+                  let result: any;
+                  try {
+                    result = JSON.parse(text);
+                  } catch {
+                    result = { success: false, error: "Invalid response" };
+                  }
+
+                  if (result.success) {
+                    setIsError(false);
+                    setSubscribeMsg("Thanks for subscribing!");
+                    form.reset();
+                  } else {
+                    setIsError(true);
+                    setSubscribeMsg(result.error || "Submission failed, please try again.");
+                  }
+                } catch (err: any) {
+                  console.error("FETCH ERROR >>>", err);
                   setIsError(true);
-                  setSubscribeMsg(result.error || "Submission failed, please try again.");
+                  setSubscribeMsg(err?.message || "Network error, please try again.");
+                } finally {
+                  setIsSubmitting(false);
                 }
-              } catch (err: any) {
-                console.error("FETCH ERROR >>>", err);
-                setIsError(true);
-                setSubscribeMsg(err?.message || "Network error, please try again.");
-              }
-            }}
->  
-          
+              }}
+            >  
             <Input
               type="text"
               placeholder="Enter your name"
@@ -88,18 +92,23 @@ const Newsletter = () => {
               className="bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/60 focus:border-accent"
             />
             <Button
-              type="submit"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground font-medium whitespace-nowrap"
-            >
-              Subscribe Free
-            </Button>
+                type="submit"
+                disabled={isSubmitting}
+                className="bg-accent hover:bg-accent/90 text-accent-foreground font-medium whitespace-nowrap disabled:opacity-60"
+              >
+                {isSubmitting ? "Submitting..." : "Subscribe Free"}
+              </Button>
           </form>
 
-          {subscribeMsg && (
-            <p className={isError ? "text-red-400 mt-2" : "text-green-400 mt-2"}>
-              {subscribeMsg}
-            </p>
-          )}
+          {isSubmitting && !subscribeMsg && (
+              <p className="text-primary-foreground/80 mt-2">Submitting…</p>
+            )}
+
+            {subscribeMsg && (
+              <p className={isError ? "text-red-400 mt-2" : "text-green-400 mt-2"}>
+                {subscribeMsg}
+              </p>
+            )}
 
           <NewsletterModal
             open={showNewsletter}
