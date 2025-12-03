@@ -2,19 +2,22 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-finance.jpg";
 import { useNavigate } from "react-router-dom";
+import React from "react";
+import NewsletterModal from "@/components/NewsletterModal";
 
 const Hero = () => {
   const navigate = useNavigate();
+  const [showNewsletter, setShowNewsletter] = React.useState(false);
 
   const goToArticles = (e: React.MouseEvent) => {
     e.preventDefault();
     navigate("/articles");
   };
-
   const goToNewsLetter = (e: React.MouseEvent) => {
-    e.preventDefault();
-    navigate("/", { state: { scrollTo: "newsletter" } });
-  };
+      e.preventDefault();
+      setShowNewsletter(true);
+    };
+ 
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-16">
       <div className="absolute inset-0 z-0">
@@ -43,6 +46,7 @@ const Hero = () => {
             <Button size="lg" variant="outline" onClick={goToNewsLetter}  className="bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground hover:bg-background/20 text-base font-medium">
               Subscribe to Newsletter 
             </Button>
+             <NewsletterModal open={showNewsletter} onClose={() => setShowNewsletter(false)} />
           </div>
         </div>
       </div>
