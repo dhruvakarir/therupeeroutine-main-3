@@ -38,39 +38,104 @@ const articles = [
     publishDate: "March 15, 2024"
   },
   {
-    id: "sip-mutual-funds",
-    title: "Complete Guide to Investing in Mutual Funds via SIP",
-    excerpt: "Learn how Systematic Investment Plans work, choosing the right mutual funds, and building wealth through disciplined monthly investments.",
+    id: "renting-vs-buying-a-home",
+    title: "Renting v/s Buying a Home",
+    excerpt: "Writing this article to help individuals make informed decisions about pros and cons of renting versus buying a home in the Indian real estate market.",
     content: `
-      <h2>What is SIP?</h2>
-      <p>Systematic Investment Plan (SIP) is a method of investing a fixed amount regularly in mutual funds. It's like a recurring deposit but in mutual funds, helping you benefit from rupee cost averaging.</p>
-      
-      <h3>Benefits of SIP Investing</h3>
-      <p>SIP helps you invest systematically without timing the market. When markets are high, you buy fewer units, and when markets are low, you buy more units, averaging out your purchase cost.</p>
-      
-      <h2>How to Choose the Right Mutual Fund</h2>
-      <p>Consider these factors: your investment goal, time horizon, and risk appetite. For long-term goals like retirement, equity funds work well. For short-term goals, debt funds are better.</p>
-      
-      <h3>Types of Mutual Funds for SIP</h3>
+
+      <p>In Indian Families, renting is often seen as a waste of money, because if we look in the long-term, that money is gone for nothing. And buying a house is seen as a success in life. I have seen some people preferring grooms who own their own house in a typical arranged marriage setup. Let us explore this topic today with data-backed research.</p>
+
+      <p>The answer to this question is not a simple binary response to the "EMI is equal to rent" calculation. It's a lifestyle, flexibility, and risk decision that sits at the heart of our long-term financial plan in Indian Tier-1 cities like Mumbai, Bengaluru, Delhi-NCR, Hyderabad, Chennai, and Pune, where property prices and rents behave very haphazardly.</p>
+
+      <h3>Why Tier-1 Makes the Question Tricky</h3>
+      <p>After Covid, Tier-1 cities have seen a steep rise in property prices but a relatively modest increase in rental yields (typically around 3.5–4% per year of the property value). That means a flat worth ₹1.5 crore in Bangalore might rent for only ₹45,000–₹50,000 a month, making renting look cheap compared to buying when you factor in other expenses like EMI interest, maintenance, and down payment.</p>
+
+      <p>At the same time, these cities also offer strong income potential, better infrastructure, and long-term appreciation, which pulls many people towards ownership despite the heavy EMI burden. The tension between "having own home" and "living with peace & flexibility" is what makes the rent vs buy framework important.</p>
+
+      <h2>A Simple Framework for Rent vs Buy</h2>
+      <p>For simplifying this decision, I would recommend following this four-part framework: Affordability and Cash Flow, Flexibility and Career Plans, Numbers: Rent Yield and Cost of Ownership, Behaviour and Peace of Mind. This framework lets us plug in our own numbers and priorities rather than rely on generic advice.</p>
+
+      <h3>1. Affordability and Cash Flow</h3>
+      <p>Primary check: Can we comfortably afford the house we want without burdening our monthly budget? I have seen lenders using a thumb rule that total EMIs (including all the loans) should not exceed 40–45% of the take-home income.</p>
+
+      <p>In Tier-1 cities, EMIs for a 2BHK flat can easily cross 50–60% of a typical upper-middle-income salary, especially if taken in the early years of career.</p>
+
       <ul>
-        <li><strong>Large Cap Funds:</strong> Invest in top 100 companies, lower risk</li>
-        <li><strong>Mid Cap Funds:</strong> Medium-sized companies, moderate risk</li>
-        <li><strong>Small Cap Funds:</strong> Smaller companies, higher risk and returns</li>
-        <li><strong>Index Funds:</strong> Track Nifty/Sensex, low cost</li>
-        <li><strong>Flexi Cap Funds:</strong> Invest across market caps, balanced approach</li>
+      <li><strong>Taking an example from Bangalore for a 2BHK:</strong> Property price: ₹1.2 crore. (Say Whitefield, Sarjapur or Indiranagar)</li>
+      <li>Down payment: ₹24 lakh (Suppose 20%)</li>
+      <li>Loan: ₹96 lakh at 8.5% for 20 years → EMI ~₹83,500/month</li>
+      <li>Rent for a similar flat in the same society: ~₹40,000/month (rental yield ~3.5–4%)</li>
+      <li>If the monthly family take-home is ₹1.6 lakh: Buying: EMI alone is ~52% of income, excluding maintenance charges, property tax, and interiors. Renting: Rent is ~22–25% of income, leaving space to invest aggressively in equities/properties in Tier-2.</li>
       </ul>
-      
-      <h2>How Much Should You Invest?</h2>
-      <p>Start with whatever amount is comfortable - even ₹500 per month works. The key is consistency. Increase your SIP amount annually as your income grows.</p>
-      
-      <h2>Common Mistakes to Avoid</h2>
-      <p>Don't stop SIP during market downturns - that's when you accumulate more units. Don't chase past performance - analyze the fund's consistency. Don't invest in too many funds - 3-4 good funds are enough.</p>
-    `,
-    category: "Mutual Funds",
-    readTime: "12 min read",
-    author: "Rajesh Kumar",
-    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80",
-    publishDate: "March 12, 2024"
+
+      <p>Rule of thumb: If EMI for the same house is more than 1.5–1.7 times the market rent and forces you above 40–45% of income, renting usually makes more sense at this stage.</p>
+
+      <h3>2. Flexibility and Career Plans</h3>
+      <p>Careers in Tier-1 are dynamic: job switches, role changes, and even city shifts are common. Renting gives us: Freedom to move closer to a new office or a better school without worrying about selling. Ability to "test" different neighbourhoods (Whitefield vs ORR in Bengaluru, Gurgaon vs Noida in NCR) before committing. Coming out of a wrong decision.</p>
+
+      <p>Buying ties you to: One specific location, which binds us to a specific place even though life changes and family expands. Regular EMI for 15–25 years.</p>
+
+      <p>If you expect major changes in: Job location, Relationship status (like, getting married in next 2–3 years), Family size (kids, parents moving in) over the next 5–7 years, renting usually wins on flexibility.</p>
+
+      <h3>3. Numbers: Rent Yield and True Cost of Ownership</h3>
+      <p>Go beyond EMI vs rent and look at rental yield and ownership costs: Rental yield = Annual rent / Property value. In Tier-1 cities, this is often 2.5–3.5%, while home loan interest rates hover around 8–9%.</p>
+
+      <h4>Ownership Costs to Include</h4>
+      <p>When you buy, your true annual cost is roughly: Interest component of EMI (Considering Principal as an investment), Maintenance & society charges, Property tax, insurance, Occasional big-ticket repairs or upgrades.</p>
+
+      <p>If this total annual cash outflow is much higher than rent for a similar house, the financial argument for buying weakens unless: We expect a strong price appreciation, maybe due to a newly proposed IT Park or expansion of the city in your favourable direction. One values stability and security very highly.</p>
+
+      <ul>
+      <li><strong>Let's take an example from Mumbai 1.5BHK:</strong> Price: ₹1.8 crore. (Average location like Ghatkoper)</li>
+      <li>Rent: ₹55,000/month (~3.7% yield)</li>
+      <li>Year 1 interest outgo: ~₹12–13 lakh</li>
+      <li>Maintenance + tax: say ₹1.2 lakh/year</li>
+      <li>Total yearly "cost" to own: ~₹13–14 lakh vs rent ~₹6.6 lakh.</li>
+      </ul>
+
+      <p>In this case, you're paying roughly double to own vs rent in the short term. If you invest the difference (₹40–45k/month) smartly in equity, your net wealth after 15–20 years can rival or exceed a buyer, especially if property appreciation is moderate.</p>
+
+      <h3>4. Behaviour and Peace of Mind</h3>
+      <p>Not all the decisions are made on spreadsheets; some decisions are driven by priorities and the lifestyle. So, one can analyse which bucket among the following two suits them the best.</p>
+
+      <p>Buying may be better if, One's family sleeps better knowing "yeh chat apni hai, koi hme nikal nhi skta", One is disciplined enough to keep EMIs manageable and not stretch for a "status" address.</p>
+
+      <p>Renting may be better if: One value lifestyle flexibility more than owning a particular flat. One is genuinely disciplined at investing the difference between rent and EMI every month in equity or diversified funds, not just letting it sit idle.</p>
+
+      <p>From what I have seen, many people who stay on rent fail here, they save on EMI but don't invest the surplus. Then owning might actually be a useful "forced savings plan."</p>
+
+      <h2>Practical Scenarios: When Renting Wins</h2>
+      <ul>
+      <li><strong>Scenario 1: Early-career tech couple in Bengaluru</strong> Combined take-home: ₹2 lakh/month. Want a 2BHK near ORR tech parks. Rent: ₹45,000; Buy: EMI ~₹1 lakh+ for similar property. Here, renting + investing the ₹55k difference in equity funds makes sense until they have clarity on career, long-term place to settle, and time to build a large down payment.</li>
+      <li><strong>Scenario 2: Single marketing professional in Gurgaon</strong> Salary: ₹1.3 lakh/month. Renting 1BHK for ₹30,000 near Cyber City. Buying means moving to distant outskirts with a long commute to keep EMI affordable. Here, renting close to work and aggressively investing surplus can maximise both time and money.</li>
+      </ul>
+
+      <h2>Practical Scenarios: When Buying Wins</h2>
+      <ul>
+      <li><strong>Scenario 3: Settled family in Pune</strong> Age: mid-30s. Stable jobs, plan to stay in the city long term. Looking at 3BHK in a decent location in the city. EMI ~1.3x current rent and within 35–40% of take-home. Here, buying starts making sense if kids' schooling and routines benefit from stability. A decent property appreciation + timely principal repayment builds long-term wealth. And the possibility of moving cities is very less.</li>
+      <li><strong>Scenario 4: Investor mindset in Tier-1</strong> If you step upon a property where: Rental yield is decent (3.5–4%+), Location has a strong infrastructure growth story, You can comfortably afford EMI. Then buying can be attractive both as a home and as a long-term asset.</li>
+      </ul>
+
+      <h2>A Simple Checklist Before Deciding</h2>
+      <p>Ask yourself:</p>
+      <ul>
+      <li><strong>Tenure:</strong> Am I 80–90% sure I'll stay in this city and roughly this area for the next 10 years at least?</li>
+      <li><strong>Cash Flow:</strong> Will my EMI (plus all house costs) stay under 40–45% of take-home?</li>
+      <li><strong>Comparison:</strong> Is EMI ≤ 1.5–1.7× rent for a similar house?</li>
+      <li><strong>Buffer:</strong> Will I still be able to invest at least 20–25% of my income after EMI?</li>
+      <li><strong>Behaviour:</strong> If I rent, will I truly invest the savings every month?</li>
+      </ul>
+
+      <p>If the answer is no to most of these, renting in a Tier-1 city and investing the surplus usually gives you better financial and lifestyle outcomes. If the answer is yes, buying can be a powerful wealth and stability anchor for your family.</p>
+
+      <p>Ultimately, I feel, in Tier-1 India, "rent vs buy" should not be about ego or social pressure; it's more about designing a life where the house supports long-term goals instead of silently choking cash flow.</p>
+
+`,
+    category: "Retirement Planning",
+    readTime: "4 min read",
+    author: "Dhruv Karir",
+    image: "https://plus.unsplash.com/premium_photo-1678208875073-046e2f7a29e0?q=80&w=1740",
+    publishDate: "Dec 12, 2025"
   },
   {
     id: "ctc-vs-in-hand",
@@ -323,62 +388,102 @@ const articles = [
     title: "Gold Investment Options: Physical vs Digital vs Sovereign Bonds",
     excerpt: "Compare physical gold, digital gold, gold ETFs, and Sovereign Gold Bonds to make informed decisions about gold investments in your portfolio.",
     content: `
-      <h2>Why Invest in Gold?</h2>
-      <p>Gold is a traditional hedge against inflation and currency fluctuations. Indians have a cultural affinity for gold, and it serves as both an investment and emotional asset.</p>
-      
-      <h2>Investment Options Compared</h2>
-      
-      <h3>1. Physical Gold (Jewelry & Coins)</h3>
-      <p><strong>Pros:</strong> Tangible asset, cultural value, can be used for personal occasions</p>
-      <p><strong>Cons:</strong> Making charges (10-25%), storage risks, purity concerns, no passive income</p>
-      <p><strong>Best For:</strong> Traditional purchases, weddings, but not as pure investment</p>
-      
-      <h3>2. Digital Gold</h3>
-      <p><strong>Pros:</strong> Buy from ₹1, no storage worries, can convert to physical, 24K purity</p>
-      <p><strong>Cons:</strong> Platform risk, no regulation, GST of 3% applies</p>
-      <p><strong>Best For:</strong> Small, regular investments without storage concerns</p>
-      
-      <h3>3. Gold ETFs</h3>
-      <p><strong>Pros:</strong> Trade on stock exchange, low expense ratio (0.5-1%), high liquidity, pure gold exposure</p>
-      <p><strong>Cons:</strong> Requires demat account, capital gains tax applicable</p>
-      <p><strong>Best For:</strong> Investors with demat accounts wanting liquidity</p>
-      
-      <h3>4. Gold Mutual Funds</h3>
-      <p><strong>Pros:</strong> No demat needed, SIP available, professional management</p>
-      <p><strong>Cons:</strong> Slightly higher expense ratio than ETFs</p>
-      <p><strong>Best For:</strong> Investors wanting SIP in gold without demat</p>
-      
-      <h3>5. Sovereign Gold Bonds (SGBs)</h3>
-      <p><strong>Pros:</strong> 2.5% annual interest, no capital gains tax if held till maturity (8 years), government-backed</p>
-      <p><strong>Cons:</strong> Lock-in period, limited issue windows</p>
-      <p><strong>Best For:</strong> Long-term investors wanting returns beyond gold price appreciation</p>
-      
-      <h2>Taxation Comparison</h2>
-      <ul>
-        <li><strong>Physical Gold:</strong> No GST on selling, but LTCG/STCG tax applies</li>
-        <li><strong>Digital Gold:</strong> 3% GST on buy, LTCG/STCG on selling</li>
-        <li><strong>Gold ETFs/Funds:</strong> LTCG 20% with indexation after 3 years</li>
-        <li><strong>SGBs:</strong> Interest taxable, but maturity proceeds completely tax-free</li>
-      </ul>
-      
-      <h2>Recommended Strategy</h2>
-      <p>For most investors:</p>
-      <ul>
-        <li><strong>70% in SGBs:</strong> For long-term holding with interest income</li>
-        <li><strong>30% in Gold ETFs:</strong> For liquidity and flexibility</li>
-      </ul>
-      
-      <h2>How Much Gold in Portfolio?</h2>
-      <p>Financial experts recommend 10-15% of your portfolio in gold. It provides diversification and acts as a hedge during equity market downturns.</p>
-      
-      <h2>Conclusion</h2>
-      <p>SGBs are the best option for long-term investors. Gold ETFs work for those seeking liquidity. Avoid physical gold for investment purposes - buy it for personal use or cultural needs, not as investment.</p>
+<h2><strong>Gold Rally: Mothers Were Right All Along!</strong></h2>
+<p>Seeing a huge upward rally in Gold within the last 12–18 months, there is an upward trend in gold investment. Almost everyone realised that when our mothers advised us to invest in gold, they were right all this time! In the past few months, I have seen almost all my friends aspiring to invest in gold in one way or the other.</p>
+
+<p>But here comes the next problem: which product to choose, how to reduce tax liability, and get gold for most of the invested value? In this article, we explore various avenues to invest in Gold, their respective pros and cons.</p>
+
+<h2><strong>1. Gold Jewellery</strong></h2>
+<p>Buying a piece of gold jewellery from a gold jeweller. This is undoubtedly the best way to make our mothers, sisters and wives happy. But have you ever wondered if it's a good way to invest in Gold?</p>
+
+<h3><strong>Pros</strong></h3>
+<ul>
+  <li>We get physical gold which works as a soluble asset in emergencies</li>
+  <li>Our families will be happy</li>
+</ul>
+
+<h3><strong>Cons</strong></h3>
+<ul>
+  <li>Making charges and taxes take a big chunk of the amount</li>
+  <li>Purity becomes a question</li>
+  <li>Security of the asset is a concern</li>
+</ul>
+
+<h2><strong>2. Digital Gold</strong></h2>
+<p>This is similar to physical gold except for the fact that storage and purity is guaranteed by the issuing organisation. This is held in a gold vault at the organisation level and can be traded at the will of the investor. Some providers provide an option to take delivery of this gold in physical format like coins.</p>
+
+<h3><strong>Pros</strong></h3>
+<ul>
+  <li>No worries for storage and purity</li>
+  <li>Convenient to buy and sell</li>
+</ul>
+
+<h3><strong>Cons</strong></h3>
+<ul>
+  <li>Lack of any regulator (like SEBI) to act as an intermediary</li>
+  <li>Taxes like physical gold will still be applicable</li>
+</ul>
+
+<h2><strong>3. Gold Exchange-Traded Funds (Gold ETFs)</strong></h2>
+<p>These are funds that track the value of gold, and move up and down analogous to the value of physical gold. These are listed on stock markets in India, and can be bought in a demat format. For every rupee we invest in these ETFs, the fund purchases equivalent gold to maintain its sanctity.</p>
+
+<h3><strong>Pros</strong></h3>
+<ul>
+  <li>Highly liquid (can be bought and sold on the stock market)</li>
+  <li>Purity and storage is not a concern</li>
+  <li>Minimal taxes and charges for purchase</li>
+</ul>
+
+<h3><strong>Cons</strong></h3>
+<ul>
+  <li>Requires a demat account</li>
+  <li>Might have tracking error with the price of gold</li>
+</ul>
+
+<h2><strong>4. Gold ETF Mutual Funds</strong></h2>
+<p>These are funds that invest in Gold ETFs, they buy and sell an equivalent amount of ETFs as per the orders they receive from investors.</p>
+
+<h3><strong>Pros</strong></h3>
+<ul>
+  <li>No demat required</li>
+  <li>Investors can do a SIP and invest for the long term</li>
+</ul>
+
+<h3><strong>Cons</strong></h3>
+<ul>
+  <li>Higher transaction costs than ETFs (due to the added expense ratio at the mutual fund level)</li>
+</ul>
+
+<h2><strong>5. Sovereign Gold Bonds</strong></h2>
+<p>These are issued by Government of India, and like digital gold, they are also backed by physical gold. On top of it, they also provide an interest of 2.5% per annum on invested value. They have a lock-in of 8 years, but the returns are tax free on maturity. Also, there is an option to get them in your demat account, so that they can be traded as per requirement.</p>
+
+<h3><strong>Pros</strong></h3>
+<ul>
+  <li>Added yearly interest on investment</li>
+  <li>Secure and safe</li>
+  <li>No extra cost or taxes</li>
+</ul>
+
+<h3><strong>Cons</strong></h3>
+<ul>
+  <li>Illiquid, very low number of trades for these bonds on the market</li>
+  <li>Very high holding period</li>
+</ul>
+
+<h2><strong>Points to Keep in Mind Before Investing</strong></h2>
+<ul>
+  <li>Buy gold as a hedge to inflation and currency depreciation, but keep in mind not to put all your savings in this asset class</li>
+  <li>Decide on an investment horizon before investing and invest accordingly</li>
+  <li>Select the product that aligns with your liquidity requirements</li>
+  <li>Added costs: Keep in mind the different types of costs that are added which different gold products have. Like, making charges in jewellery, expense ratio in mutual funds and transaction charges in ETFs</li>
+</ul>
+ 
     `,
     category: "Alternative Investments",
-    readTime: "11 min read",
-    author: "Neha Singh",
+    readTime: "6 min read",
+    author: "Dhruv Karir",
     image: "https://images.unsplash.com/photo-1434626881859-194d67b2b86f?w=800&q=80",
-    publishDate: "March 1, 2024"
+    publishDate: "Oct 1, 2025"
   }
 ];
 

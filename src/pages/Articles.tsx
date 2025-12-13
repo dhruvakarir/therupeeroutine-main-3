@@ -13,13 +13,13 @@ const articles = [
     image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80"
   },
   {
-    id: "sip-mutual-funds",
-    title: "Complete Guide to Investing in Mutual Funds via SIP",
-    excerpt: "Learn how Systematic Investment Plans work, choosing the right mutual funds, and building wealth through disciplined monthly investments.",
-    category: "Mutual Funds",
-    readTime: "12 min read",
-    author: "Rajesh Kumar",
-    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80"
+    id: "renting-vs-buying-a-home",
+    title: "Renting v/s Buying a Home: Indian Perspective",
+    excerpt: "Writing this article to help individuals make informed decisions about pros and cons of renting versus buying a home in the Indian real estate market.",
+    category: "Retirement Planning",
+    readTime: "4 min read",
+    author: "Dhruv Karir",
+    image: "https://plus.unsplash.com/premium_photo-1678208875073-046e2f7a29e0?q=80&w=1740"
   },
   {
     id: "ctc-vs-in-hand",
@@ -53,8 +53,8 @@ const articles = [
     title: "Gold Investment Options: Physical vs Digital vs Sovereign Bonds",
     excerpt: "Compare physical gold, digital gold, gold ETFs, and Sovereign Gold Bonds to make informed decisions about gold investments in your portfolio.",
     category: "Alternative Investments",
-    readTime: "11 min read",
-    author: "Neha Singh",
+    readTime: "6 min read",
+    author: "Dhruv Karir",
     image: "https://images.unsplash.com/photo-1434626881859-194d67b2b86f?w=800&q=80"
   }
 ];
