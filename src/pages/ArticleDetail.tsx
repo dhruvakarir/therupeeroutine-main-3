@@ -7,35 +7,228 @@ import { Clock, User, ArrowLeft, Share2 } from "lucide-react";
 
 const articles = [
   {
-    id: "ppf-vs-nps",
-    title: "PPF vs NPS: Which Retirement Option is Better for You?",
-    excerpt: "Compare Public Provident Fund and National Pension System to understand tax benefits, returns, and liquidity for your retirement planning in India.",
+    id: "lazy-investing",
+    title: "Lazy investment portfolio for Indians Investors",
+    excerpt: "A simple, low-maintenance investment portfolio strategy tailored for Indian investors seeking long-term wealth building with minimal effort.",
     content: `
-      <h2>Understanding PPF and NPS</h2>
-      <p>Both Public Provident Fund (PPF) and National Pension System (NPS) are popular retirement planning tools in India, but they serve different purposes and come with distinct features.</p>
-      
-      <h3>Public Provident Fund (PPF)</h3>
-      <p>PPF is a government-backed savings scheme with a 15-year lock-in period. It offers guaranteed returns and tax benefits under Section 80C. The current interest rate is around 7.1% per annum, revised quarterly by the government.</p>
-      
-      <h3>National Pension System (NPS)</h3>
-      <p>NPS is a market-linked pension scheme where your contributions are invested in equity, corporate bonds, and government securities. It offers higher potential returns but comes with market risks.</p>
-      
-      <h2>Tax Benefits Comparison</h2>
-      <p>PPF contributions up to ₹1.5 lakh qualify for deduction under Section 80C. The interest earned and maturity amount are completely tax-free.</p>
-      <p>NPS offers additional tax benefits with an extra deduction of ₹50,000 under Section 80CCD(1B), over and above the ₹1.5 lakh limit under Section 80C.</p>
-      
-      <h2>Which One Should You Choose?</h2>
-      <p>Choose PPF if you prefer guaranteed returns, complete safety, and tax-free maturity. It's ideal for risk-averse investors.</p>
-      <p>Choose NPS if you're comfortable with market risks and want higher potential returns. The additional tax benefit makes it attractive for high-income earners.</p>
-      
-      <h2>Conclusion</h2>
-      <p>Consider having both in your portfolio - PPF for stability and NPS for growth potential. A balanced approach often works best for long-term retirement planning.</p>
+      <p>
+    All of us have a desire to be wealthy, or at least get financially independent from jobs or business.
+    But only a handful of us actually want to spend weekends staring at stock charts, analysing P/E ratios,
+    or panicking because a certain CEO tweeted something controversial.
+  </p>
+
+  <p><em>I certainly don't. I'd rather be riding my motorbike, planning my next trip, or just sleeping in.</em></p>
+
+  <p>
+    If you are a salaried professional in India, whether you're writing code in Bengaluru,
+    crunching financial numbers in Mumbai, or managing brands in Gurgaon, you are already working hard for your money.
+    Your money should not require more hard work to grow.
+  </p>
+
+  <p>
+    This is where people often recommend entering the <strong>Lazy Portfolio</strong>.
+    This is not about being slothful; it is about being efficient.
+    The strategy was popularized by the <em>Bogleheads</em> (followers of John Bogle, founder of Vanguard),
+    based on a simple truth: <strong>Simplicity often beats complexity</strong>.
+  </p>
+
+  <p>
+    Today, let's decode how to build the famous <strong>3-Fund Portfolio</strong> with an Indian twist.
+  </p>
+
+  <h2>What is a 3-Fund Portfolio?</h2>
+
+  <p>
+    The concept originated in the US and suggests that we only need three things to build wealth:
+  </p>
+
+  <ul>
+    <li>Total US Stock Market Fund</li>
+    <li>Total International Stock Market Fund</li>
+    <li>Total Bond Market Fund</li>
+  </ul>
+
+  <p>
+    But we earn in Rupees, spend in Rupees, and live in India.
+    We cannot apply this framework directly.
+    We need a <em>"Desi"</em> version that accounts for higher inflation and strong domestic growth.
+  </p>
+
+  <p>The Indian version of the Lazy Portfolio looks like this:</p>
+
+  <ul>
+    <li><strong>The Growth Engine:</strong> Indian Equity</li>
+    <li><strong>The Global Hedge:</strong> International Equity (US)</li>
+    <li><strong>The Safety Net:</strong> Indian Debt</li>
+  </ul>
+
+  <h2>Bucket 1: The Growth Engine (Indian Equity)</h2>
+
+  <p><strong>Recommended Allocation:</strong> 40% – 60%</p>
+
+  <p>
+    This is the heart of the portfolio.
+    India is a developing economy with a long growth runway,
+    and this allocation allows us to participate in the growth of Indian businesses.
+  </p>
+
+  <p>
+    <strong>The “Lazy” Pick:</strong>
+    <em>Do not hunt for the "next HDFC" or "next Infosys". Just buy the whole haystack.</em>
+  </p>
+
+  <p><strong>The Instrument:</strong> Nifty 50 Index Fund or Nifty 500 Index Fund</p>
+
+  <ul>
+    <li>
+      <strong>Nifty 50:</strong>
+      Top 50 listed companies in India.
+      <em>Stable giants like Reliance and TCS, but relatively slower growth.</em>
+    </li>
+    <li>
+      <strong>Nifty 500:</strong>
+      Covers the top 500 companies, including mid and small caps.
+      <em>Higher growth potential without stock picking.</em>
+    </li>
+  </ul>
+
+  <h2>Bucket 2: The Global Hedge (International Equity)</h2>
+
+  <p><strong>Recommended Allocation:</strong> 10% – 20%</p>
+
+  <p>Why invest outside India?</p>
+
+  <ul>
+    <li>
+      <strong>Diversification:</strong>
+      Indian markets make up only 3–4% of global markets.
+      <em>Exposure to the remaining 96% reduces concentration risk.</em>
+    </li>
+    <li>
+      <strong>Tech Giants:</strong>
+      India does not own Google, Apple, Microsoft, or Nvidia.
+      <em>We use them daily, so we should benefit from their growth.</em>
+    </li>
+    <li>
+      <strong>Dollar Hedge:</strong>
+      The Rupee historically depreciates against the Dollar.
+      <em>US assets protect purchasing power in INR terms.</em>
+    </li>
+  </ul>
+
+  <p>
+    <strong>The “Lazy” Pick:</strong>
+    S&amp;P 500 Index Fund or Nasdaq 100 Fund of Fund (FoF)
+  </p>
+
+  <p>
+    <em>
+      Note: International funds are now taxed at income slab rates.
+      Treat them as long-term compounders, not trading instruments.
+    </em>
+  </p>
+
+  <h2>Bucket 3: The Safety Net (Debt / Fixed Income)</h2>
+
+  <p><strong>Recommended Allocation:</strong> 20% – 40%</p>
+
+  <p>
+    This bucket is not meant to make you rich.
+    It is meant to keep you calm when markets crash.
+    <em>For example, during Covid-19, debt remained relatively stable.</em>
+  </p>
+
+  <p><strong>The “Lazy” Pick:</strong> Government-backed instruments</p>
+
+  <ul>
+    <li>
+      <strong>EPF:</strong>
+      Excellent debt allocation for salaried individuals.
+      <em>Currently ~8.25% tax-free interest.</em>
+    </li>
+    <li>
+      <strong>PPF:</strong>
+      Long-term, tax-free compounding.
+      <em>Ideal for conservative wealth building.</em>
+    </li>
+  </ul>
+
+  <h2>Real-Life Examples</h2>
+
+  <h3>Scenario A: The Aggressive Techie (Age 26)</h3>
+
+  <p><strong>Profile:</strong> High salary, single, high risk appetite, FIRE aspirant</p>
+
+  <ul>
+    <li>50% Nifty 500 / Nifty Next 50 Index Fund</li>
+    <li>30% Nasdaq 100 FoF</li>
+    <li>20% EPF + Liquid Fund</li>
+  </ul>
+
+  <p>
+    <em>
+      Why it works: Fewer responsibilities and higher risk tolerance allow aggressive equity exposure.
+    </em>
+  </p>
+
+  <h3>Scenario B: The Balanced Family Man (Age 35)</h3>
+
+  <p><strong>Profile:</strong> Married, one child, saving for home and education</p>
+
+  <ul>
+    <li>40% Nifty 50 Index Fund</li>
+    <li>20% S&amp;P 500 Index Fund</li>
+    <li>40% EPF + PPF + Corporate Bond Fund</li>
+  </ul>
+
+  <p>
+    <em>
+      Why it works: Debt provides stability while US equity offers currency diversification.
+    </em>
+  </p>
+
+  <h2>Rebalancing: The Lazy Magic</h2>
+
+  <p>
+    The Lazy Portfolio only needs attention once a year.
+    Rebalancing keeps risk in check.
+  </p>
+
+  <p>
+    <em>
+      Example: If your target is 50% Equity and 50% Debt,
+      and markets push equity to 60%, sell 10% equity and move it to debt.
+    </em>
+  </p>
+
+  <p>
+    This automatically enforces <strong>Buy Low, Sell High</strong> without emotions.
+  </p>
+
+  <h2>Summary</h2>
+
+  <ul>
+    <li>
+      Analyse your risk profile and build a portfolio that survives bad markets.
+    </li>
+    <li>
+      Keep costs low.
+      <em>A 1.5% expense ratio difference compounded over 20 years can buy a luxury car.</em>
+    </li>
+    <li>
+      Automate with SIPs and avoid checking apps frequently.
+    </li>
+    <li>
+      Do not change your portfolio based on random advice.
+      <em>Evaluate it during annual rebalancing, or ignore it.</em>
+    </li>
+  </ul>
     `,
     category: "Retirement Planning",
-    readTime: "8 min read",
-    author: "Priya Sharma",
+    readTime: "5 min read",
+    author: "Dhruv Karir",
     image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80",
-    publishDate: "March 15, 2024"
+    publishDate: "Jan 15, 2026"
   },
   {
     id: "renting-vs-buying-a-home",

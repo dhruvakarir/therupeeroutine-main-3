@@ -2,12 +2,12 @@ import BlogCard from "./BlogCard";
 
 const articles = [
   {
-    id: "ppf-vs-nps",
-    title: "PPF vs NPS: Which Retirement Option is Better for You?",
-    excerpt: "Compare Public Provident Fund and National Pension System to understand tax benefits, returns, and liquidity for your retirement planning in India.",
+    id: "lazy-investing",
+    title: "Lazy investment portfolio for Indians Investors",
+    excerpt: "A simple, low-maintenance investment portfolio strategy tailored for Indian investors seeking long-term wealth building with minimal effort.",
     category: "Retirement Planning",
-    readTime: "8 min read",
-    author: "Priya Sharma",
+    readTime: "5 min read",
+    author: "Dhruv Karir",
     image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80"
   },
   {
