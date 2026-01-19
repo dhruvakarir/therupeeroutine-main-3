@@ -25,7 +25,7 @@ const Newsletter = () => {
           <Mail className="h-16 w-16 text-accent mx-auto mb-6" />
 
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-4">
-            Join 50,000+ Indian Investors
+            Join 500+ Indian Investors
           </h2>
 
           <p className="text-xl text-primary-foreground/90 mb-8">
