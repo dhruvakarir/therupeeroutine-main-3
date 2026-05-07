@@ -4,8 +4,15 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Clock, User, ArrowLeft, Share2 } from "lucide-react";
+import { useQuery } from "@tanstack/react-query";
+import {
+  ArticleCard,
+  ArticleDetail as ArticleDetailType,
+  getArticle,
+  getArticles,
+} from "@/api/articles";
 
-const articles = [
+const staticArticles = [
   {
     id: "lazy-investing",
     title: "Lazy investment portfolio for Indians Investors",
@@ -683,17 +690,47 @@ const articles = [
 const ArticleDetail = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  
-  const article = articles.find(a => a.id === id);
 
-  if (!article) {
+  const {
+    data: article,
+    isLoading: isArticleLoading,
+    isError: isArticleError,
+  } = useQuery<ArticleDetailType | undefined>({
+    queryKey: ["article", id],
+    queryFn: async () => {
+      if (!id) return undefined;
+      return getArticle(id);
+    },
+    enabled: !!id,
+  });
+
+  const { data: allArticles } = useQuery<ArticleCard[]>({
+    queryKey: ["articles"],
+    queryFn: getArticles,
+  });
+
+  if (isArticleLoading) {
+    return (
+      <div className="min-h-screen font-body">
+        <Header />
+        <main className="pt-16 min-h-[60vh] flex items-center justify-center">
+          <p className="text-muted-foreground">Loading article...</p>
+        </main>
+        <Footer />
+      </div>
+    );
+  }
+
+  if (isArticleError || !article) {
     return (
       <div className="min-h-screen font-body">
         <Header />
         <main className="pt-16 min-h-[60vh] flex items-center justify-center">
           <div className="text-center">
-            <h1 className="text-3xl font-heading font-bold text-foreground mb-4">Article Not Found</h1>
-            <Button onClick={() => navigate('/articles')}>
+            <h1 className="text-3xl font-heading font-bold text-foreground mb-4">
+              Article Not Found
+            </h1>
+            <Button onClick={() => navigate("/articles")}>
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to Articles
             </Button>
@@ -704,16 +741,21 @@ const ArticleDetail = () => {
     );
   }
 
+  const relatedArticles =
+    allArticles
+      ?.filter((a) => a.slug !== article.slug && a.category === article.category)
+      .slice(0, 2) ?? [];
+
   return (
     <div className="min-h-screen font-body">
       <Header />
       <main className="pt-16">
         <article className="py-12 bg-gradient-subtle">
           <div className="container mx-auto px-4 max-w-4xl">
-            <Button 
-              variant="ghost" 
+            <Button
+              variant="ghost"
               className="mb-6"
-              onClick={() => navigate('/articles')}
+              onClick={() => navigate("/articles")}
             >
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to Articles
@@ -739,9 +781,9 @@ const ArticleDetail = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="h-4 w-4" />
-                  <span>{article.readTime}</span>
+                  <span>{article.read_time}</span>
                 </div>
-                <span>{article.publishDate}</span>
+                <span>{article.publish_date}</span>
               </div>
               <Button variant="outline" size="icon">
                 <Share2 className="h-4 w-4" />
@@ -749,14 +791,14 @@ const ArticleDetail = () => {
             </div>
 
             <div className="relative h-[400px] mb-8 rounded-lg overflow-hidden">
-              <img 
-                src={article.image} 
+              <img
+                src={article.image_url}
                 alt={article.title}
                 className="w-full h-full object-cover"
               />
             </div>
 
-            <div 
+            <div
               className="prose prose-lg max-w-none
                 prose-headings:font-heading prose-headings:text-foreground
                 prose-h2:text-3xl prose-h2:font-bold prose-h2:mt-12 prose-h2:mb-4
@@ -772,32 +814,31 @@ const ArticleDetail = () => {
 
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="text-3xl font-heading font-bold text-foreground mb-8">Related Articles</h2>
+            <h2 className="text-3xl font-heading font-bold text-foreground mb-8">
+              Related Articles
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {articles
-                .filter(a => a.id !== article.id && a.category === article.category)
-                .slice(0, 2)
-                .map(relatedArticle => (
-                  <div 
-                    key={relatedArticle.id}
-                    className="group cursor-pointer"
-                    onClick={() => navigate(`/articles/${relatedArticle.id}`)}
-                  >
-                    <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
-                      <img 
-                        src={relatedArticle.image} 
-                        alt={relatedArticle.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
-                    <Badge className="mb-2 bg-secondary text-secondary-foreground">
-                      {relatedArticle.category}
-                    </Badge>
-                    <h3 className="text-xl font-heading font-semibold text-foreground group-hover:text-secondary transition-colors">
-                      {relatedArticle.title}
-                    </h3>
+              {relatedArticles.map((relatedArticle) => (
+                <div
+                  key={relatedArticle.slug}
+                  className="group cursor-pointer"
+                  onClick={() => navigate(`/articles/${relatedArticle.slug}`)}
+                >
+                  <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
+                    <img
+                      src={relatedArticle.image_url}
+                      alt={relatedArticle.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
-                ))}
+                  <Badge className="mb-2 bg-secondary text-secondary-foreground">
+                    {relatedArticle.category}
+                  </Badge>
+                  <h3 className="text-xl font-heading font-semibold text-foreground group-hover:text-secondary transition-colors">
+                    {relatedArticle.title}
+                  </h3>
+                </div>
+              ))}
             </div>
           </div>
         </section>

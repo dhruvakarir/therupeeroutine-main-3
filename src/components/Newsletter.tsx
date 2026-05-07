@@ -2,9 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Mail } from "lucide-react";
 import NewsletterModal from "@/components/NewsletterModal";
-import React from "react";
-import { useState } from "react";
-
+import React, { useState } from "react";
 
 const Newsletter = () => {
   const [subscribeMsg, setSubscribeMsg] = useState<string | null>(null);
@@ -17,11 +15,52 @@ const Newsletter = () => {
     setShowNewsletter(true);
   };
 
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const email = (formData.get("CONTACT_EMAIL") || "").toString().trim();
+
+    if (!email) {
+      setIsError(true);
+      setSubscribeMsg("Please enter your email.");
+      return;
+    }
+
+    setIsSubmitting(true);
+    setSubscribeMsg(null);
+
+    try {
+      const baseUrl = import.meta.env.VITE_API_BASE_URL ?? "";
+      const url = `${baseUrl.replace(/\/$/, "")}/api/newsletter/subscribe/`;
+
+      const res = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, source: "homepage" }),
+      });
+
+      if (!res.ok) {
+        throw new Error("Subscription failed");
+      }
+
+      setIsError(false);
+      setSubscribeMsg("Thanks for subscribing!");
+      form.reset();
+    } catch (err: any) {
+      console.error("NEWSLETTER ERROR >>>", err);
+      setIsError(true);
+      setSubscribeMsg(err?.message || "Network error, please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section id="newsletter" className="py-20 bg-gradient-hero">
-     
+      <div className="max-w-3xl mx-auto text-center">
         <div className="max-w-3xl mx-auto text-center">
-          <div className="max-w-3xl mx-auto text-center">
           <Mail className="h-16 w-16 text-accent mx-auto mb-6" />
 
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-4">
@@ -32,52 +71,8 @@ const Newsletter = () => {
             Get weekly insights on mutual funds, stock market updates, tax-saving tips,
             and investment strategies for Indian markets. Build your wealth with expert guidance.
           </p>
-          <form
-              id="newsletter-form"
-              onSubmit={async (e) => {
-                e.preventDefault();
 
-                const form = e.currentTarget as HTMLFormElement | null;
-                if (!form) return;
-
-                const formData = new FormData(form);
-                const data = Object.fromEntries(formData);
-
-                setIsSubmitting(true);
-                setSubscribeMsg(null);
-
-                try {
-                  const res = await fetch("https://script.google.com/macros/s/AKfycbyFqHyDnkPrC_nuCsO9_gRA41SjHRfiFdMK8rmF3l-qQHspqM9uK_8mvGUkivEP4S_V/exec", {
-                    method: "POST",
-                    headers: { "Content-Type": "text/plain;charset=utf-8" },
-                    body: JSON.stringify(data),
-                  });
-
-                  const text = await res.text();
-                  let result: any;
-                  try {
-                    result = JSON.parse(text);
-                  } catch {
-                    result = { success: false, error: "Invalid response" };
-                  }
-
-                  if (result.success) {
-                    setIsError(false);
-                    setSubscribeMsg("Thanks for subscribing!");
-                    form.reset();
-                  } else {
-                    setIsError(true);
-                    setSubscribeMsg(result.error || "Submission failed, please try again.");
-                  }
-                } catch (err: any) {
-                  console.error("FETCH ERROR >>>", err);
-                  setIsError(true);
-                  setSubscribeMsg(err?.message || "Network error, please try again.");
-                } finally {
-                  setIsSubmitting(false);
-                }
-              }}
-            >  
+          <form id="newsletter-form" onSubmit={handleSubmit}>
             <Input
               type="text"
               placeholder="Enter your name"
@@ -92,23 +87,23 @@ const Newsletter = () => {
               className="bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/60 focus:border-accent"
             />
             <Button
-                type="submit"
-                disabled={isSubmitting}
-                className="bg-accent hover:bg-accent/90 text-accent-foreground font-medium whitespace-nowrap disabled:opacity-60"
-              >
-                {isSubmitting ? "Submitting..." : "Subscribe Free"}
-              </Button>
+              type="submit"
+              disabled={isSubmitting}
+              className="bg-accent hover:bg-accent/90 text-accent-foreground font-medium whitespace-nowrap disabled:opacity-60"
+            >
+              {isSubmitting ? "Submitting..." : "Subscribe Free"}
+            </Button>
           </form>
 
           {isSubmitting && !subscribeMsg && (
-              <p className="text-primary-foreground/80 mt-2">Submitting…</p>
-            )}
+            <p className="text-primary-foreground/80 mt-2">Submitting…</p>
+          )}
 
-            {subscribeMsg && (
-              <p className={isError ? "text-red-400 mt-2" : "text-green-400 mt-2"}>
-                {subscribeMsg}
-              </p>
-            )}
+          {subscribeMsg && (
+            <p className={isError ? "text-red-400 mt-2" : "text-green-400 mt-2"}>
+              {subscribeMsg}
+            </p>
+          )}
 
           <NewsletterModal
             open={showNewsletter}

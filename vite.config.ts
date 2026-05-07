@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => ({
   base: "/", // Replace <repository-name> with your GitHub repo name
   server: {
     host: "::",
-    port: 8080,
+    port: 8000,
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
