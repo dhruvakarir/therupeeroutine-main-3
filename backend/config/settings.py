@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 
 from dotenv import load_dotenv
+import dj_database_url
 
 load_dotenv()
 
@@ -12,6 +13,12 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "insecure-secret-key-change-me")
 DEBUG = os.environ.get("DEBUG", "True") == "True"
 
 ALLOWED_HOSTS: list[str] = os.environ.get("ALLOWED_HOSTS", "").split() or ["*"]
+
+DATABASES = {
+    "default": dj_database_url.config(
+        default=os.environ.get("DATABASE_URL")
+    )
+}
 
 INSTALLED_APPS = [
     "django.contrib.admin",
