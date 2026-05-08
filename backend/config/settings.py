@@ -16,7 +16,10 @@ ALLOWED_HOSTS: list[str] = os.environ.get("ALLOWED_HOSTS", "").split() or ["*"]
 
 DATABASES = {
     "default": dj_database_url.config(
-        default=os.environ.get("DATABASE_URL")
+        default=os.environ.get(
+            "DATABASE_URL",
+            "postgresql://postgres:postgres@localhost:5432/therupeeroutine"
+        )
     )
 }
 
