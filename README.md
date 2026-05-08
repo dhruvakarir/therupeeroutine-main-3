@@ -1,39 +1,56 @@
-# Welcome to your Lovable project
+# The Rupee Routine
 
-## Project info
+A full-stack financial education application with a React/Vite frontend and Django backend.
 
-**URL**: https://lovable.dev/projects/9bcdc0d2-0268-4e55-a74d-f365ed0bac32
+## Project Structure
 
-## How can I edit this code?
+```
+therupeeroutine-main-3/
+├── frontend/                  # React/Vite frontend application
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   ├── vite.config.ts
+│   ├── tailwind.config.ts
+│   └── tsconfig.json
+├── backend/                   # Django REST API
+│   ├── manage.py
+│   ├── requirements.txt
+│   └── config/
+└── docker-compose.yml         # Docker configuration for both services
+```
 
-There are several ways of editing your application.
+## Getting Started
 
-**Use Lovable**
+### Prerequisites
+- Node.js & npm (for frontend) - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Python 3.x & pip (for backend)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/9bcdc0d2-0268-4e55-a74d-f365ed0bac32) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+### Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Clone the repository
 git clone <YOUR_GIT_URL>
+cd therupeeroutine-main-3
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Install all dependencies (frontend and backend)
+npm run install:all
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Or install separately:
+# Frontend
+cd frontend && npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Backend
+cd backend && pip install -r requirements.txt
+```
+
+### Development
+
+```sh
+# Start the frontend development server (from root or frontend directory)
 npm run dev
+
+# The app will be available at http://localhost:8000
 ```
 
 **Edit a file directly in GitHub**
