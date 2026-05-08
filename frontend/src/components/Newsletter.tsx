@@ -21,6 +21,7 @@ const Newsletter = () => {
     const form = e.currentTarget;
     const formData = new FormData(form);
     const email = (formData.get("CONTACT_EMAIL") || "").toString().trim();
+    const name = (formData.get("FIRSTNAME") || "").toString().trim();
 
     if (!email) {
       setIsError(true);
@@ -38,7 +39,7 @@ const Newsletter = () => {
       const res = await fetch(url, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, source: "homepage" }),
+        body: JSON.stringify({ name, email, source: "homepage" }),
       });
 
       if (!res.ok) {
